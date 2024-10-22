@@ -25,10 +25,12 @@ button:hover {
     flex-wrap: wrap;
     width: 992px;
     border: 1px solid black;
+    background-color: black;
 }
 
 .box {
     background-color: aqua;
     border: 1px solid black;
     box-sizing: border-box;
+    opacity: 1;
 }

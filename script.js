@@ -33,8 +33,11 @@ function setBoxSize () {
 }
 
 function changeColor (e) {
+    var randomColor = "rgb(" + randomRGBValue() + ", " + randomRGBValue() + ", " + randomRGBValue() + ")";
     if (e.target.classList.contains("box")){
-        e.target.style.backgroundColor = "#ff7f50";
+        e.target.style.backgroundColor = randomColor;
+        const opacity = getComputedStyle(e.target).opacity - .1;
+        e.target.style.opacity = opacity;
     }
 }
 
@@ -52,4 +55,9 @@ function sizePrompt () {
         setBoxSize();
         newContainer.addEventListener("mouseover", changeColor);
     } else sizePrompt();
+}
+
+
+function randomRGBValue () {
+    return Math.floor(Math.random()*(255+1))
 }
