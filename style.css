@@ -28,8 +28,6 @@ button:hover {
 }
 
 .box {
-    height: 62px;
-    width: 62px;
     background-color: aqua;
     border: 1px solid black;
     box-sizing: border-box;
