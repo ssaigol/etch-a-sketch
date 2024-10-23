@@ -49,7 +49,7 @@ function changeColor (e) {
 function sizePrompt () {
     gridSize = prompt("How many squares per side? Please enter a square number.", 16);
     if (gridSize === null) gridSize = 16;
-    button.textContent = "Grid Size: " + gridSize;
+    button.textContent = "Grid Size: " + gridSize + "x" + gridSize;
     if (gridSize <= 100) {
         const container = document.getElementById("main-container");
         container.remove();
