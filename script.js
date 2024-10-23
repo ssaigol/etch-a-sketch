@@ -50,7 +50,7 @@ function sizePrompt () {
     gridSize = prompt("How many squares per side? Please enter a square number.", 16);
     if (gridSize === null) gridSize = 16;
     button.textContent = "Grid Size: " + gridSize;
-    if (gridSize <= 100 && Number.isInteger(Math.sqrt(gridSize))) {
+    if (gridSize <= 100) {
         const container = document.getElementById("main-container");
         container.remove();
         const newContainer = document.createElement("div");
